@@ -1,5 +1,13 @@
 import openai
 import streamlit as st
+import environ
+
+env = environ.Env()
+environ.Env.read_env()
+
+API_KEY = env("apikey")
+
+
 
 st.title("Deloitte Consultant GPT")
 
