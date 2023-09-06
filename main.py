@@ -5,7 +5,7 @@ import environ
 env = environ.Env()
 environ.Env.read_env()
 
-API_KEY = env("apikey")
+API_KEY = env("OPENAI_API_KEY")
 
 
 
